@@ -1160,87 +1160,100 @@ static NSDictionary *expectedVersionsDictionary = nil;
 		NSString *templateInitPath = [gameDataPath stringByAppendingPathComponent:@"template_init.txt"];
 		NSString *resourceAppPath = [self resourceAppPath];
 		NSString *resourceGameDataPath = [self resourceGameDataPath];
-		
+        
 		if (!gameDataPathExists && !gameAppPathExists)
 		{
-			[self setStatusWithoutWait:@"Installing... This may take a few minutes."];
-			[installProgressIndicator startAnimation:nil];
-			
-			if (!resourceGameDataPath)
-			{
-				NSLog(@"Could not find data path: %@", resourceGameDataPath);
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not find the Data.", nil] waitUntilDone:YES];
-			}
-			
-			NSString *tempGameDataPath = [gameDataPath stringByAppendingString:@"1"];
-			
-			if ([[NSFileManager defaultManager] fileExistsAtPath:tempGameDataPath])
-			{
-				[[NSFileManager defaultManager] removeItemAtPath:tempGameDataPath
-														   error:NULL];
-			}
-			
-			if (![[NSFileManager defaultManager] copyItemAtPath:resourceGameDataPath
-														 toPath:tempGameDataPath
-														  error:NULL])
-			{
-				NSLog(@"Could not copy GameData!");
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not copy Game Data.", [NSNull null], nil] waitUntilDone:YES];
-			}
-			
-			if (![[NSFileManager defaultManager] moveItemAtPath:tempGameDataPath
-														 toPath:gameDataPath
-														  error:NULL])
-			{
-				NSLog(@"Could not move game data path!");
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not move Game Data.", [NSNull null], nil] waitUntilDone:YES];
-			}
-			
-			if (!resourceAppPath)
-			{
-				NSLog(@"Could not find data path: %@", resourceAppPath);
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not find the App Data.", nil] waitUntilDone:YES];
-			}
-			
-			NSString *tempAppPath = [appPath stringByAppendingString:@"1"];
-			
-			if ([[NSFileManager defaultManager] fileExistsAtPath:tempAppPath])
-			{
-				[[NSFileManager defaultManager] removeItemAtPath:tempAppPath
-														   error:NULL];
-			}
-			
-			if (![[NSFileManager defaultManager] copyItemAtPath:resourceAppPath
-														 toPath:tempAppPath
-														  error:NULL])
-			{
-				NSLog(@"Could not copy GameData!");
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not copy Game Data.", [NSNull null], nil] waitUntilDone:YES];
-			}
-			
-			if (![[NSFileManager defaultManager] moveItemAtPath:tempAppPath
-														 toPath:appPath
-														  error:NULL])
-			{
-				NSLog(@"Could not move app path!");
-				[self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not move App Data.", [NSNull null], nil] waitUntilDone:YES];
-			}
-			
-			if ([[NSFileManager defaultManager] fileExistsAtPath:[self preferencesPath]])
-			{
-				[[NSFileManager defaultManager] removeItemAtPath:[self preferencesPath]
-														   error:NULL];
-			}
-			
-			if ([[NSFileManager defaultManager] fileExistsAtPath:templateInitPath])
-			{
-				[[NSFileManager defaultManager] removeItemAtPath:templateInitPath
-														   error:NULL];
-			}
-			
-			[[NSUserDefaults standardUserDefaults] setObject:expectedVersionsDictionary forKey:HALO_FILE_VERSIONS_KEY];
-			
-			[installProgressIndicator stopAnimation:nil];
+
+            // Only install if we have the files
+            BOOL gameInstallDataPathExists = [[NSFileManager defaultManager] fileExistsAtPath:resourceGameDataPath];
+            BOOL gameInstallAppPathExists = [[NSFileManager defaultManager] fileExistsAtPath:resourceAppPath];
+            if (gameInstallDataPathExists && gameInstallAppPathExists) {
+                [self setStatusWithoutWait:@"Installing... This may take a few minutes."];
+                [installProgressIndicator startAnimation:nil];
+                
+                if (!resourceGameDataPath)
+                {
+                    NSLog(@"Could not find data path: %@", resourceGameDataPath);
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not find the Data.", nil] waitUntilDone:YES];
+                }
+                
+                NSString *tempGameDataPath = [gameDataPath stringByAppendingString:@"1"];
+                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:tempGameDataPath])
+                {
+                    [[NSFileManager defaultManager] removeItemAtPath:tempGameDataPath
+                                                               error:NULL];
+                }
+                
+                if (![[NSFileManager defaultManager] copyItemAtPath:resourceGameDataPath
+                                                             toPath:tempGameDataPath
+                                                              error:NULL])
+                {
+                    NSLog(@"Could not copy GameData!");
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not copy Game Data.", [NSNull null], nil] waitUntilDone:YES];
+                }
+                
+                if (![[NSFileManager defaultManager] moveItemAtPath:tempGameDataPath
+                                                             toPath:gameDataPath
+                                                              error:NULL])
+                {
+                    NSLog(@"Could not move game data path!");
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not move Game Data.", [NSNull null], nil] waitUntilDone:YES];
+                }
+                
+                if (!resourceAppPath)
+                {
+                    NSLog(@"Could not find data path: %@", resourceAppPath);
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not find the App Data.", nil] waitUntilDone:YES];
+                }
+                
+                NSString *tempAppPath = [appPath stringByAppendingString:@"1"];
+                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:tempAppPath])
+                {
+                    [[NSFileManager defaultManager] removeItemAtPath:tempAppPath
+                                                               error:NULL];
+                }
+                
+                if (![[NSFileManager defaultManager] copyItemAtPath:resourceAppPath
+                                                             toPath:tempAppPath
+                                                              error:NULL])
+                {
+                    NSLog(@"Could not copy GameData!");
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not copy Game Data.", [NSNull null], nil] waitUntilDone:YES];
+                }
+                
+                if (![[NSFileManager defaultManager] moveItemAtPath:tempAppPath
+                                                             toPath:appPath
+                                                              error:NULL])
+                {
+                    NSLog(@"Could not move app path!");
+                    [self performSelectorOnMainThread:@selector(abortInstallation:) withObject:[NSArray arrayWithObjects:@"Install Error", @"HaloMD could not move App Data.", [NSNull null], nil] waitUntilDone:YES];
+                }
+                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:[self preferencesPath]])
+                {
+                    [[NSFileManager defaultManager] removeItemAtPath:[self preferencesPath]
+                                                               error:NULL];
+                }
+                
+                if ([[NSFileManager defaultManager] fileExistsAtPath:templateInitPath])
+                {
+                    [[NSFileManager defaultManager] removeItemAtPath:templateInitPath
+                                                               error:NULL];
+                }
+                
+                [[NSUserDefaults standardUserDefaults] setObject:expectedVersionsDictionary forKey:HALO_FILE_VERSIONS_KEY];
+                
+                [installProgressIndicator stopAnimation:nil];
+            } else {
+                // Um, we don't actually have the files. This is a 'lean build' so to speak
+                NSInteger response = NSRunCriticalAlertPanel(@"HaloMD install is required", @"This copy of HaloMC requires HaloMD to be installed. Please download and install HaloMD.", @"Download", @"Quit", nil);
+                if (response == NSOKButton) {
+                    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://halomd.macgamingmods.com/HaloMD.dmg"]];
+                }
+                [NSApp terminate:self];
+            }
 		}
 		else
 		{
@@ -1383,8 +1396,12 @@ static NSDictionary *expectedVersionsDictionary = nil;
         
         // launch the game
         [self launchHalo:nil];
-        [NSApp terminate:self];
 	}
+}
+
+- (void)closeMC {
+    NSLog(@"Waiting to terminate... le.. del deedle dee");
+    [NSApp performSelectorOnMainThread:@selector(terminate:) withObject:self waitUntilDone:YES];
 }
 
 - (void)anotherApplicationDidLaunch:(NSNotification *)notification
@@ -1394,7 +1411,7 @@ static NSDictionary *expectedVersionsDictionary = nil;
 		NSRunningApplication *runningApplication = [[notification userInfo] objectForKey:NSWorkspaceApplicationKey];
 		if ([haloTask isRunning] && [runningApplication processIdentifier] == [haloTask processIdentifier])
 		{
-			[runningApplication activateWithOptions:NSApplicationActivateAllWindows];
+			[runningApplication activateWithOptions:NSApplicationActivateAllWindows | NSApplicationActivateIgnoringOtherApps];
 		}
 	}
 	else
@@ -1404,6 +1421,7 @@ static NSDictionary *expectedVersionsDictionary = nil;
 			[[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:[[notification userInfo] objectForKey:@"NSApplicationPath"]]];
 		}
 	}
+    [NSApp terminate:self];
 }
 
 - (void)anotherApplicationDidTerminate:(NSNotification *)notification
@@ -1983,10 +2001,7 @@ static NSDictionary *expectedVersionsDictionary = nil;
 		shiftKeyHeldDown = YES;
 	}
 	
-	[NSThread detachNewThreadSelector:@selector(installGame)
-							 toTarget:self
-						   withObject:nil];
-	
+    [self installGame];
 }
 
 - (IBAction)showPreferencesWindow:(id)sender

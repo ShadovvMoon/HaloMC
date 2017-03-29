@@ -15,7 +15,6 @@
 		26707D1C1A6C2250009E7FAD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26707D1B1A6C2250009E7FAD /* IOKit.framework */; };
 		26C51A0D1E0D845F000C1738 /* MDPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C51A0B1E0D845F000C1738 /* MDPreferencesWindowController.m */; };
 		26C51A0E1E0D845F000C1738 /* MDPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C51A0C1E0D845F000C1738 /* MDPreferencesWindowController.xib */; };
-		7706FC1114DBB28C0023DBA4 /* Data in Copy Halo Data */ = {isa = PBXBuildFile; fileRef = 7706FC0E14DBB26C0023DBA4 /* Data */; };
 		770BEEB2154DB7900052193F /* shield.icns in Resources */ = {isa = PBXBuildFile; fileRef = 770BEEB1154DB7900052193F /* shield.icns */; };
 		770C153D1741CC37001380A8 /* game_icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 770C153C1741CC37001380A8 /* game_icon.pdf */; };
 		770C15411742E1FD001380A8 /* in_chat_icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 770C15401742E1FC001380A8 /* in_chat_icon.pdf */; };
@@ -302,7 +301,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				7706FC1114DBB28C0023DBA4 /* Data in Copy Halo Data */,
 			);
 			name = "Copy Halo Data";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +458,6 @@
 		26C51A0A1E0D845F000C1738 /* MDPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPreferencesWindowController.h; sourceTree = "<group>"; };
 		26C51A0B1E0D845F000C1738 /* MDPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPreferencesWindowController.m; sourceTree = "<group>"; };
 		26C51A0C1E0D845F000C1738 /* MDPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDPreferencesWindowController.xib; sourceTree = "<group>"; };
-		7706FC0E14DBB26C0023DBA4 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		770BEEB1154DB7900052193F /* shield.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = shield.icns; sourceTree = "<group>"; };
 		770C153C1741CC37001380A8 /* game_icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = game_icon.pdf; sourceTree = "<group>"; };
 		770C15401742E1FC001380A8 /* in_chat_icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = in_chat_icon.pdf; sourceTree = "<group>"; };
@@ -1474,7 +1471,6 @@
 				770BEEB1154DB7900052193F /* shield.icns */,
 				776E3FAC14FAAC01001414AB /* dsa_pub.pem */,
 				774EF67C17C72117005ABB20 /* crc32forge.py */,
-				7706FC0E14DBB26C0023DBA4 /* Data */,
 				775B52AC14D3326800B874E3 /* com.null.halominidemo.plist */,
 				775B529514D331C800B874E3 /* HaloMC-Info.plist */,
 				775B529614D331C800B874E3 /* InfoPlist.strings */,
@@ -1905,7 +1901,6 @@
 				7706FC1014DBB2830023DBA4 /* Copy Halo Data */,
 				776E3FAA14FAA9F0001414AB /* Copy Frameworks */,
 				77E6C6CF18414A3600705ED5 /* Copy Plugins */,
-				26B4A3471BAF382200DA16F8 /* Run Copy Maps Script */,
 			);
 			buildRules = (
 			);
@@ -2112,23 +2107,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		26B4A3471BAF382200DA16F8 /* Run Copy Maps Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Copy Maps Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "maps_dest=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/Data/DoNotTouchOrModify/Maps\"\n\nmaps_source=\"/Applications/${PRODUCT_NAME}.app/Contents/Resources/Data/DoNotTouchOrModify/Maps\"\n\nif [ ! -d \"$maps_dest\" ]; then\n    ditto $maps_source $maps_dest\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		775B528514D331C800B874E3 /* Sources */ = {
