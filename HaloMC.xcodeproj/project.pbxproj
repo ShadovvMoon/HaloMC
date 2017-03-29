@@ -484,10 +484,10 @@
 		774EF68F17C721CC005ABB20 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = vendor/Growl.framework; sourceTree = "<group>"; };
 		774EF69117C721D1005ABB20 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = vendor/Sparkle.framework; sourceTree = "<group>"; };
 		775B528914D331C800B874E3 /* HaloMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaloMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		775B529514D331C800B874E3 /* HaloMD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaloMD-Info.plist"; sourceTree = "<group>"; };
+		775B529514D331C800B874E3 /* HaloMC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaloMC-Info.plist"; sourceTree = "<group>"; };
 		775B529714D331C800B874E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		775B529914D331C800B874E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		775B529B14D331C800B874E3 /* HaloMD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaloMD-Prefix.pch"; sourceTree = "<group>"; };
+		775B529B14D331C800B874E3 /* HaloMC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaloMC-Prefix.pch"; sourceTree = "<group>"; };
 		775B529D14D331C800B874E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		775B529F14D331C800B874E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		775B52A014D331C800B874E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1476,10 +1476,10 @@
 				774EF67C17C72117005ABB20 /* crc32forge.py */,
 				7706FC0E14DBB26C0023DBA4 /* Data */,
 				775B52AC14D3326800B874E3 /* com.null.halominidemo.plist */,
-				775B529514D331C800B874E3 /* HaloMD-Info.plist */,
+				775B529514D331C800B874E3 /* HaloMC-Info.plist */,
 				775B529614D331C800B874E3 /* InfoPlist.strings */,
 				775B529914D331C800B874E3 /* main.m */,
-				775B529B14D331C800B874E3 /* HaloMD-Prefix.pch */,
+				775B529B14D331C800B874E3 /* HaloMC-Prefix.pch */,
 				775B529C14D331C800B874E3 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -1895,9 +1895,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		775B528814D331C800B874E3 /* HaloMD */ = {
+		775B528814D331C800B874E3 /* HaloMC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 775B52A714D331C900B874E3 /* Build configuration list for PBXNativeTarget "HaloMD" */;
+			buildConfigurationList = 775B52A714D331C900B874E3 /* Build configuration list for PBXNativeTarget "HaloMC" */;
 			buildPhases = (
 				775B528514D331C800B874E3 /* Sources */,
 				775B528614D331C800B874E3 /* Frameworks */,
@@ -1918,7 +1918,7 @@
 				77BC679F1840899D00F82849 /* PBXTargetDependency */,
 				77C595FD1842B91A00C81DC0 /* PBXTargetDependency */,
 			);
-			name = HaloMD;
+			name = HaloMC;
 			productName = HaloMD;
 			productReference = 775B528914D331C800B874E3 /* HaloMD.app */;
 			productType = "com.apple.product-type.application";
@@ -2000,7 +2000,7 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pennsylvania State University";
 			};
-			buildConfigurationList = 775B528314D331C800B874E3 /* Build configuration list for PBXProject "HaloMD" */;
+			buildConfigurationList = 775B528314D331C800B874E3 /* Build configuration list for PBXProject "HaloMC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -2026,7 +2026,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				775B528814D331C800B874E3 /* HaloMD */,
+				775B528814D331C800B874E3 /* HaloMC */,
 				77BC674C1840405100F82849 /* MDOverrides */,
 				77BC6789184086DC00F82849 /* ChatTextRedirect */,
 				77E6C7081842B7BE00705ED5 /* MapList */,
@@ -2507,13 +2507,13 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HaloMD/HaloMD-Prefix.pch";
+				GCC_PREFIX_HEADER = "HaloMD/HaloMC-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "HaloMD/HaloMD-Info.plist";
+				INFOPLIST_FILE = "HaloMD/HaloMC-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/vendor\"",
@@ -2525,7 +2525,7 @@
 					"-Wl,-rpath,@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "null.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2546,13 +2546,13 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HaloMD/HaloMD-Prefix.pch";
+				GCC_PREFIX_HEADER = "HaloMD/HaloMC-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "HaloMD/HaloMD-Info.plist";
+				INFOPLIST_FILE = "HaloMD/HaloMC-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/vendor\"",
@@ -2564,7 +2564,7 @@
 					"-Wl,-rpath,@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "null.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2801,7 +2801,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		775B528314D331C800B874E3 /* Build configuration list for PBXProject "HaloMD" */ = {
+		775B528314D331C800B874E3 /* Build configuration list for PBXProject "HaloMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				775B52A514D331C900B874E3 /* Debug */,
@@ -2810,7 +2810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		775B52A714D331C900B874E3 /* Build configuration list for PBXNativeTarget "HaloMD" */ = {
+		775B52A714D331C900B874E3 /* Build configuration list for PBXNativeTarget "HaloMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				775B52A814D331C900B874E3 /* Debug */,

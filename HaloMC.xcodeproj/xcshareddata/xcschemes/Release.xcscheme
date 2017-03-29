@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "775B528814D331C800B874E3"
-               BuildableName = "HaloMD.app"
-               BlueprintName = "HaloMD"
-               ReferencedContainer = "container:HaloMD.xcodeproj">
+               BuildableName = "HaloMC.app"
+               BlueprintName = "HaloMC"
+               ReferencedContainer = "container:HaloMC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "775B528814D331C800B874E3"
-            BuildableName = "HaloMD.app"
-            BlueprintName = "HaloMD"
-            ReferencedContainer = "container:HaloMD.xcodeproj">
+            BuildableName = "HaloMC.app"
+            BlueprintName = "HaloMC"
+            ReferencedContainer = "container:HaloMC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "775B528814D331C800B874E3"
-            BuildableName = "HaloMD.app"
-            BlueprintName = "HaloMD"
-            ReferencedContainer = "container:HaloMD.xcodeproj">
+            BuildableName = "HaloMC.app"
+            BlueprintName = "HaloMC"
+            ReferencedContainer = "container:HaloMC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "775B528814D331C800B874E3"
-            BuildableName = "HaloMD.app"
-            BlueprintName = "HaloMD"
-            ReferencedContainer = "container:HaloMD.xcodeproj">
+            BuildableName = "HaloMC.app"
+            BlueprintName = "HaloMC"
+            ReferencedContainer = "container:HaloMC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HaloMD.xcodeproj">
+      location = "self:/Users/samuco/Desktop/HaloMC/HaloMC.xcodeproj">
    </FileRef>
 </Workspace>

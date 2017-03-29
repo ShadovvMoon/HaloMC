@@ -1380,6 +1380,10 @@ static NSDictionary *expectedVersionsDictionary = nil;
 		{
 			[self performSelectorOnMainThread:@selector(addOpenFiles) withObject:nil waitUntilDone:NO];
 		}
+        
+        // launch the game
+        [self launchHalo:nil];
+        [NSApp terminate:self];
 	}
 }
 
@@ -1983,11 +1987,6 @@ static NSDictionary *expectedVersionsDictionary = nil;
 							 toTarget:self
 						   withObject:nil];
 	
-	[inspectorController initiateGameInspector];
-    
-    // launch the game
-    [self launchHalo:nil];
-    [NSApp terminate:self];
 }
 
 - (IBAction)showPreferencesWindow:(id)sender
