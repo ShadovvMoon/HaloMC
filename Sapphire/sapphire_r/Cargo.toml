@@ -1,0 +1,11 @@
+[package]
+name = "sapphire_r"
+version = "0.1.0"
+authors = ["Halogen002 <iambetterthanyourface@hotmail.com>"]
+
+[dependencies.tritium]
+git = "https://github.com/Halogen002/Tritium"
+branch = "0.6.0"
+
+[lib]
+crate_type = ["staticlib"]
