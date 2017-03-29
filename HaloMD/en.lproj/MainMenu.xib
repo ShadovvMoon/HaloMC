@@ -30,9 +30,6 @@
                             </menuItem>
                             <menuItem title="Check for Update…" id="705">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="checkForUpdates:" target="704" id="706"/>
-                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
@@ -548,7 +545,7 @@ Gw
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="pSt-Uv-SHh">
                             <rect key="frame" x="1" y="0.0" width="653" height="283"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" headerView="544" id="542">
                                     <rect key="frame" x="0.0" y="0.0" width="653" height="266"/>
@@ -985,7 +982,6 @@ Gw
                 </subviews>
             </view>
         </window>
-        <customObject id="704" customClass="SUUpdater"/>
         <customObject id="826" customClass="MDInspectorController">
             <connections>
                 <outlet property="addressTextField" destination="774" id="830"/>

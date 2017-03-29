@@ -2572,7 +2572,7 @@
 					"\"$(PROJECT_DIR)/vendor\"",
 					"$(PROJECT_DIR)/Sapphire/sapphire_r/target/release",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lresolv",
 					"-Wl,-rpath,@loader_path/../Frameworks",
@@ -2611,7 +2611,7 @@
 					"\"$(PROJECT_DIR)/vendor\"",
 					"$(PROJECT_DIR)/Sapphire/sapphire_r/target/release",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lresolv",
 					"-Wl,-rpath,@loader_path/../Frameworks",
