@@ -284,7 +284,7 @@ static __attribute__((constructor)) void init()
 			addMapBasedPlugins(gMapBasedPluginNamesDictionary, modListDictionaryFromPathWithoutExtension(modsListPath), YES);
 			addMapBasedPlugins(gMapBasedPluginNamesDictionary, modListDictionaryFromPathWithoutExtension(modsDevListPath), NO);
 			
-			gThirdPartyPluginsDirectory = [[haloMDAppSupportPath stringByAppendingPathComponent:@"PlugIns"] copy];
+			gThirdPartyPluginsDirectory = [[haloMDAppSupportPath stringByAppendingPathComponent:@"PlugIns (CE)"] copy];
 			gThirdPartyPluginsDisabledDirectory = [[haloMDAppSupportPath stringByAppendingPathComponent:@"PlugIns (Disabled)"] copy];
 			
 			addPluginsInDirectory(pluginPaths, gThirdPartyPluginsDirectory);

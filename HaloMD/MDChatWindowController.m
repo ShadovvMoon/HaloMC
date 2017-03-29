@@ -33,7 +33,9 @@
 
 #import "MDChatWindowController.h"
 #import "MDChatRosterElement.h"
+#ifdef USE_GROWL
 #import <Growl/Growl.h>
+#endif
 #import <CommonCrypto/CommonDigest.h>
 #import <IOKit/pwr_mgt/IOPMLib.h>
 #import "AppDelegate.h"
@@ -503,6 +505,7 @@
 			{
 				if ([typeString isEqualToString:@"on_private_message"])
 				{
+#ifdef USE_GROWL
 					[NSClassFromString(@"GrowlApplicationBridge")
 					 notifyWithTitle:nickString ?: @""
 					 description:textString
@@ -511,7 +514,7 @@
 					 priority:0
 					 isSticky:NO
 					 clickContext:@"MessageNotification"];
-					
+#endif
 					if (![NSApp isActive])
 					{
 						[self setNumberOfUnreadMentions:numberOfUnreadMentions+1];
@@ -531,6 +534,7 @@
 					
 					if (foundMention)
 					{
+#ifdef USE_GROWL
 						[NSClassFromString(@"GrowlApplicationBridge")
 						 notifyWithTitle:nickString ? nickString : @""
 						 description:textString
@@ -539,7 +543,7 @@
 						 priority:0
 						 isSticky:NO
 						 clickContext:@"MessageNotification"];
-						
+#endif
 						if (![NSApp isActive])
 						{
 							[self setNumberOfUnreadMentions:numberOfUnreadMentions+1];
@@ -547,6 +551,7 @@
 					}
 					else if (![NSApp isActive] && [[NSUserDefaults standardUserDefaults] boolForKey:CHAT_SHOW_MESSAGE_RECEIVE_NOTIFICATION] && ![(AppDelegate *)[NSApp delegate] isHaloOpenAndRunningFullscreen])
 					{
+#ifdef USE_GROWL
 						[NSClassFromString(@"GrowlApplicationBridge")
 						 notifyWithTitle:nickString ? nickString : @""
 						 description:textString
@@ -555,6 +560,7 @@
 						 priority:0
 						 isSticky:NO
 						 clickContext:@"MessageNotification"];
+#endif
 					}
 				}
 				

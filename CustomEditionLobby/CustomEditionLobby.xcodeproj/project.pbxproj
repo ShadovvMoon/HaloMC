@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA63205D1D4D9703002F5BD6 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = DA63205B1D4D9703002F5BD6 /* mach_override.c */; };
+		DA9B74B71D4C6F4200177088 /* ZZCELobby.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9B74B61D4C6F4200177088 /* ZZCELobby.m */; };
+		DA9B74BA1D4C7AC400177088 /* ce.map in Resources */ = {isa = PBXBuildFile; fileRef = DA9B74B91D4C7AB900177088 /* ce.map */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA63205B1D4D9703002F5BD6 /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		DA63205C1D4D9703002F5BD6 /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		DA9B74AC1D4C6F1E00177088 /* Custom Edition Lobby.mdplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Custom Edition Lobby.mdplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9B74AF1D4C6F1E00177088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9B74B51D4C6F4200177088 /* ZZCELobby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCELobby.h; sourceTree = "<group>"; };
+		DA9B74B61D4C6F4200177088 /* ZZCELobby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCELobby.m; sourceTree = "<group>"; };
+		DA9B74B81D4C705100177088 /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDPlugin.h; path = CustomEditionLobby/MDPlugin.h; sourceTree = "<group>"; };
+		DA9B74B91D4C7AB900177088 /* ce.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = ce.map; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9B74A91D4C6F1E00177088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9B74A31D4C6F1E00177088 = {
+			isa = PBXGroup;
+			children = (
+				DA63205B1D4D9703002F5BD6 /* mach_override.c */,
+				DA63205C1D4D9703002F5BD6 /* mach_override.h */,
+				DA9B74B91D4C7AB900177088 /* ce.map */,
+				DA9B74B81D4C705100177088 /* MDPlugin.h */,
+				DA9B74AE1D4C6F1E00177088 /* CustomEditionLobby */,
+				DA9B74AD1D4C6F1E00177088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9B74AD1D4C6F1E00177088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B74AC1D4C6F1E00177088 /* Custom Edition Lobby.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9B74AE1D4C6F1E00177088 /* CustomEditionLobby */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B74AF1D4C6F1E00177088 /* Info.plist */,
+				DA9B74B51D4C6F4200177088 /* ZZCELobby.h */,
+				DA9B74B61D4C6F4200177088 /* ZZCELobby.m */,
+			);
+			path = CustomEditionLobby;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9B74AB1D4C6F1E00177088 /* CustomEditionLobby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9B74B21D4C6F1E00177088 /* Build configuration list for PBXNativeTarget "CustomEditionLobby" */;
+			buildPhases = (
+				DA9B74A81D4C6F1E00177088 /* Sources */,
+				DA9B74A91D4C6F1E00177088 /* Frameworks */,
+				DA9B74AA1D4C6F1E00177088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomEditionLobby;
+			productName = CustomEditionLobby;
+			productReference = DA9B74AC1D4C6F1E00177088 /* Custom Edition Lobby.mdplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9B74A41D4C6F1E00177088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Zero2;
+				TargetAttributes = {
+					DA9B74AB1D4C6F1E00177088 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DA9B74A71D4C6F1E00177088 /* Build configuration list for PBXProject "CustomEditionLobby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA9B74A31D4C6F1E00177088;
+			productRefGroup = DA9B74AD1D4C6F1E00177088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9B74AB1D4C6F1E00177088 /* CustomEditionLobby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9B74AA1D4C6F1E00177088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9B74BA1D4C7AC400177088 /* ce.map in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9B74A81D4C6F1E00177088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA63205D1D4D9703002F5BD6 /* mach_override.c in Sources */,
+				DA9B74B71D4C6F4200177088 /* ZZCELobby.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA9B74B01D4C6F1E00177088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA9B74B11D4C6F1E00177088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA9B74B31D4C6F1E00177088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomEditionLobby/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protonnebula.CustomEditionLobby;
+				PRODUCT_NAME = "Custom Edition Lobby";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Debug;
+		};
+		DA9B74B41D4C6F1E00177088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomEditionLobby/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protonnebula.CustomEditionLobby;
+				PRODUCT_NAME = "Custom Edition Lobby";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9B74A71D4C6F1E00177088 /* Build configuration list for PBXProject "CustomEditionLobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B74B01D4C6F1E00177088 /* Debug */,
+				DA9B74B11D4C6F1E00177088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9B74B21D4C6F1E00177088 /* Build configuration list for PBXNativeTarget "CustomEditionLobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9B74B31D4C6F1E00177088 /* Debug */,
+				DA9B74B41D4C6F1E00177088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9B74A41D4C6F1E00177088 /* Project object */;
+}

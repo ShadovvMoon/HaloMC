@@ -45,7 +45,10 @@
 #import "MDPreferencesWindowController.h"
 #import <CoreFoundation/CoreFoundation.h>
 #import <IOKit/IOKitLib.h>
+
+#ifdef USE_GROWL
 #import <Growl/Growl.h>
+#endif
 
 @interface AppDelegate (Private)
 
@@ -162,13 +165,15 @@ static NSDictionary *expectedVersionsDictionary = nil;
 		
 		[[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(getUrl:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 		
+#ifdef USE_GROWL
 		if ([[NSBundle class] respondsToSelector:@selector(bundleWithURL:)]) // easy way to tell if user is on >= 10.6
 		{
 			NSString *growlPath = [[[[NSBundle mainBundle] privateFrameworksPath] stringByAppendingPathComponent:@"Growl"] stringByAppendingPathExtension:@"framework"];
 			[[NSBundle bundleWithPath:growlPath] load];
 			[NSClassFromString(@"GrowlApplicationBridge") setGrowlDelegate:(id<GrowlApplicationBridgeDelegate>)self];
 		}
-		
+#endif 
+        
 		[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(systemWillSleep:) name:NSWorkspaceWillSleepNotification object:nil];
 		[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(systemDidWake:) name:NSWorkspaceDidWakeNotification object:nil];
 	}
@@ -1955,8 +1960,6 @@ static NSDictionary *expectedVersionsDictionary = nil;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[[self window] makeKeyAndOrderFront:nil];
-	
 	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
 														   selector:@selector(anotherApplicationDidLaunch:)
 															   name:NSWorkspaceDidLaunchApplicationNotification
@@ -1981,6 +1984,10 @@ static NSDictionary *expectedVersionsDictionary = nil;
 						   withObject:nil];
 	
 	[inspectorController initiateGameInspector];
+    
+    // launch the game
+    [self launchHalo:nil];
+    [NSApp terminate:self];
 }
 
 - (IBAction)showPreferencesWindow:(id)sender

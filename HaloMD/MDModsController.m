@@ -37,7 +37,11 @@
 #import "MDPluginListItem.h"
 #import "MDServer.h"
 #import "MDHashDigest.h"
+
+#ifdef USE_GROWL
 #import <Growl/Growl.h>
+#endif 
+
 #import "AppDelegate.h"
 #import "MDHyperLink.h"
 #import "SCEvents.h"
@@ -1087,6 +1091,7 @@ static BOOL gJsonSerializaionExists = NO;
 					}
 					else if ([[file pathExtension] isEqualToString:@"map"] && ![[self mapsToIgnore] containsObject:[[file lastPathComponent] stringByDeletingPathExtension]] && ![[file lastPathComponent] hasPrefix:@"."])
 					{
+#ifdef USE_GROWL
 						if ([self pendingPlugins] == nil && (![[appDelegate window] isKeyWindow] || ![NSApp isActive]))
 						{
 							[NSClassFromString(@"GrowlApplicationBridge")
@@ -1098,7 +1103,7 @@ static BOOL gJsonSerializaionExists = NO;
 							 isSticky:NO
 							 clickContext:@"ModDownloaded"];
 						}
-						
+#endif
 						addedMod = [self addModAtPath:[unzipDirectory stringByAppendingPathComponent:file]];
 					}
 				}
@@ -1199,6 +1204,7 @@ static BOOL gJsonSerializaionExists = NO;
 			
 			if (didPatch)
 			{
+#ifdef USE_GROWL
 				if ([self pendingPlugins] == nil && (![[appDelegate window] isKeyWindow] || ![NSApp isActive]))
 				{
 					[NSClassFromString(@"GrowlApplicationBridge")
@@ -1210,7 +1216,7 @@ static BOOL gJsonSerializaionExists = NO;
 					 isSticky:NO
 					 clickContext:@"ModDownloaded"];
 				}
-				
+#endif
 				addedMod = [self addModAtPath:newMapPath];
 			}
 			else

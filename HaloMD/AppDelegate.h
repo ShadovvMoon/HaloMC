@@ -32,6 +32,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+//#define USE_GROWL
 
 @class MDInspectorController;
 @class MDModsController;

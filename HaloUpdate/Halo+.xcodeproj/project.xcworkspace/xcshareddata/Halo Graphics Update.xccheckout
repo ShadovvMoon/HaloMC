@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87272E0E-506D-401A-9962-2F27492885A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Halo Graphics Update</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B214844757E2BFCEF758C83EAD98F2E13AECF8A</key>
+		<string>https://github.com/ShadovvMoon/HaloJS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Halo Graphics Update.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B214844757E2BFCEF758C83EAD98F2E13AECF8A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ShadovvMoon/HaloJS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5B214844757E2BFCEF758C83EAD98F2E13AECF8A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B214844757E2BFCEF758C83EAD98F2E13AECF8A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HaloUpgrade</string>
+		</dict>
+	</array>
+</dict>
+</plist>

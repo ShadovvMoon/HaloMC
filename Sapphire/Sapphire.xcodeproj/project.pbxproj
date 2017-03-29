@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA2800101D55D3450086E495 /* bitmaps.map in Resources */ = {isa = PBXBuildFile; fileRef = DA28000D1D55D3340086E495 /* bitmaps.map */; };
+		DA2800121D55D58B0086E495 /* loc.map in Resources */ = {isa = PBXBuildFile; fileRef = DA2800111D55D5850086E495 /* loc.map */; };
+		DA869E791E77E40100A1AB49 /* libsapphire_r.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA869E781E77E40100A1AB49 /* libsapphire_r.a */; };
+		DAB878A61D459D4400B20D23 /* ZZTSapphire.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB878A51D459D4400B20D23 /* ZZTSapphire.m */; };
+		DAB878A91D459E2900B20D23 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = DAB878A71D459E2900B20D23 /* mach_override.c */; };
+		DAE030061D49E5F100A6E0C1 /* sounds_diff.rmap in Resources */ = {isa = PBXBuildFile; fileRef = DAE030041D49E5D900A6E0C1 /* sounds_diff.rmap */; };
+		DAE030071D49E5F300A6E0C1 /* bitmaps_diff.rmap in Resources */ = {isa = PBXBuildFile; fileRef = DAE030051D49E5D900A6E0C1 /* bitmaps_diff.rmap */; };
+		DAF766A31D45B2140013327E /* resources.map in Resources */ = {isa = PBXBuildFile; fileRef = DAF766A21D45B20B0013327E /* resources.map */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA28000D1D55D3340086E495 /* bitmaps.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = bitmaps.map; sourceTree = "<group>"; };
+		DA2800111D55D5850086E495 /* loc.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = loc.map; sourceTree = "<group>"; };
+		DA869E781E77E40100A1AB49 /* libsapphire_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsapphire_r.a; path = sapphire_r/target/release/libsapphire_r.a; sourceTree = "<group>"; };
+		DAB8789B1D459D1600B20D23 /* Sapphire.mdplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sapphire.mdplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB8789E1D459D1600B20D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB878A41D459D4400B20D23 /* ZZTSapphire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTSapphire.h; sourceTree = "<group>"; };
+		DAB878A51D459D4400B20D23 /* ZZTSapphire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTSapphire.m; sourceTree = "<group>"; };
+		DAB878A71D459E2900B20D23 /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		DAB878A81D459E2900B20D23 /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		DAB878AA1D459E4600B20D23 /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		DAE030041D49E5D900A6E0C1 /* sounds_diff.rmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = sounds_diff.rmap; sourceTree = "<group>"; };
+		DAE030051D49E5D900A6E0C1 /* bitmaps_diff.rmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = bitmaps_diff.rmap; sourceTree = "<group>"; };
+		DAF766A21D45B20B0013327E /* resources.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = resources.map; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB878981D459D1600B20D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA869E791E77E40100A1AB49 /* libsapphire_r.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB878921D459D1600B20D23 = {
+			isa = PBXGroup;
+			children = (
+				DA869E781E77E40100A1AB49 /* libsapphire_r.a */,
+				DAF766A21D45B20B0013327E /* resources.map */,
+				DAE030041D49E5D900A6E0C1 /* sounds_diff.rmap */,
+				DAE030051D49E5D900A6E0C1 /* bitmaps_diff.rmap */,
+				DA2800111D55D5850086E495 /* loc.map */,
+				DA28000D1D55D3340086E495 /* bitmaps.map */,
+				DAB878A41D459D4400B20D23 /* ZZTSapphire.h */,
+				DAB878A51D459D4400B20D23 /* ZZTSapphire.m */,
+				DAB878A71D459E2900B20D23 /* mach_override.c */,
+				DAB878A81D459E2900B20D23 /* mach_override.h */,
+				DAB878AA1D459E4600B20D23 /* MDPlugin.h */,
+				DAB8789D1D459D1600B20D23 /* Sapphire */,
+				DAB8789C1D459D1600B20D23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB8789C1D459D1600B20D23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8789B1D459D1600B20D23 /* Sapphire.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB8789D1D459D1600B20D23 /* Sapphire */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8789E1D459D1600B20D23 /* Info.plist */,
+			);
+			path = Sapphire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB8789A1D459D1600B20D23 /* Sapphire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB878A11D459D1600B20D23 /* Build configuration list for PBXNativeTarget "Sapphire" */;
+			buildPhases = (
+				DAB878971D459D1600B20D23 /* Sources */,
+				DAB878981D459D1600B20D23 /* Frameworks */,
+				DAB878991D459D1600B20D23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sapphire;
+			productName = Sapphire;
+			productReference = DAB8789B1D459D1600B20D23 /* Sapphire.mdplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB878931D459D1600B20D23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Paul Whitcomb";
+				TargetAttributes = {
+					DAB8789A1D459D1600B20D23 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DAB878961D459D1600B20D23 /* Build configuration list for PBXProject "Sapphire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAB878921D459D1600B20D23;
+			productRefGroup = DAB8789C1D459D1600B20D23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB8789A1D459D1600B20D23 /* Sapphire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB878991D459D1600B20D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2800101D55D3450086E495 /* bitmaps.map in Resources */,
+				DA2800121D55D58B0086E495 /* loc.map in Resources */,
+				DAE030061D49E5F100A6E0C1 /* sounds_diff.rmap in Resources */,
+				DAE030071D49E5F300A6E0C1 /* bitmaps_diff.rmap in Resources */,
+				DAF766A31D45B2140013327E /* resources.map in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB878971D459D1600B20D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB878A91D459E2900B20D23 /* mach_override.c in Sources */,
+				DAB878A61D459D4400B20D23 /* ZZTSapphire.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DAB8789F1D459D1600B20D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAB878A01D459D1600B20D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAB878A21D459D1600B20D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sapphire/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/sapphire_r/target/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.protonnebula.Sapphire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Debug;
+		};
+		DAB878A31D459D1600B20D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sapphire/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/sapphire_r/target/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.protonnebula.Sapphire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB878961D459D1600B20D23 /* Build configuration list for PBXProject "Sapphire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB8789F1D459D1600B20D23 /* Debug */,
+				DAB878A01D459D1600B20D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB878A11D459D1600B20D23 /* Build configuration list for PBXNativeTarget "Sapphire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB878A21D459D1600B20D23 /* Debug */,
+				DAB878A31D459D1600B20D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB878931D459D1600B20D23 /* Project object */;
+}

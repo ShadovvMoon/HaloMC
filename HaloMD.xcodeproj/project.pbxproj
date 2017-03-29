@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1470F7851E8C2D3300FF694F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1470F7841E8C2D3300FF694F /* OpenGL.framework */; };
+		1470F7891E8C300000FF694F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1470F7881E8C300000FF694F /* Carbon.framework */; };
+		14ECBF2D1E8C3411003B4BAC /* Halo+.mdplugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 14ECBF2C1E8C33F5003B4BAC /* Halo+.mdplugin */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14ECBF2E1E8C3417003B4BAC /* Sapphire.mdplugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 14ECBF0B1E8C337C003B4BAC /* Sapphire.mdplugin */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14ECBF2F1E8C342D003B4BAC /* Custom Edition Lobby.mdplugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 14ECBF1A1E8C33CB003B4BAC /* Custom Edition Lobby.mdplugin */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26707D1C1A6C2250009E7FAD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26707D1B1A6C2250009E7FAD /* IOKit.framework */; };
 		26C51A0D1E0D845F000C1738 /* MDPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C51A0B1E0D845F000C1738 /* MDPreferencesWindowController.m */; };
 		26C51A0E1E0D845F000C1738 /* MDPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C51A0C1E0D845F000C1738 /* MDPreferencesWindowController.xib */; };
@@ -218,6 +223,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		14ECBF0A1E8C337C003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAB8789B1D459D1600B20D23;
+			remoteInfo = Sapphire;
+		};
+		14ECBF191E8C33CB003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9B74AC1D4C6F1E00177088;
+			remoteInfo = CustomEditionLobby;
+		};
+		14ECBF2B1E8C33F5003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBF1C1E8C33F5003B4BAC /* Halo+.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77E6C6DB18415A4A00705ED5;
+			remoteInfo = "Halo+";
+		};
+		14ECBF301E8C3452003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBF1C1E8C33F5003B4BAC /* Halo+.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E6C6DA18415A4A00705ED5;
+			remoteInfo = "Halo+";
+		};
+		14ECBF321E8C3455003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB8789A1D459D1600B20D23;
+			remoteInfo = Sapphire;
+		};
+		14ECBF341E8C3457003B4BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9B74AB1D4C6F1E00177088;
+			remoteInfo = CustomEditionLobby;
+		};
 		77BC675C184043B300F82849 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 775B528014D331C800B874E3 /* Project object */;
@@ -279,6 +326,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				14ECBF2F1E8C342D003B4BAC /* Custom Edition Lobby.mdplugin in Copy Plugins */,
+				14ECBF2E1E8C3417003B4BAC /* Sapphire.mdplugin in Copy Plugins */,
+				14ECBF2D1E8C3411003B4BAC /* Halo+.mdplugin in Copy Plugins */,
 				77FD5275187F5FF800E2A604 /* MapDownloader.mdplugin in Copy Plugins */,
 				77C595FE1842B94900C81DC0 /* MapList.mdplugin in Copy Plugins */,
 				77E6C6D018414A4700705ED5 /* ChatTextRedirect.mdplugin in Copy Plugins */,
@@ -289,6 +339,123 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1470F7841E8C2D3300FF694F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		1470F7881E8C300000FF694F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		14ECBE2C1E8C337C003B4BAC /* bitmaps.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bitmaps.map; sourceTree = "<group>"; };
+		14ECBE2D1E8C337C003B4BAC /* bitmaps_diff.rmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = bitmaps_diff.rmap; sourceTree = "<group>"; };
+		14ECBE2E1E8C337C003B4BAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ECBE2F1E8C337C003B4BAC /* loc.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = loc.map; sourceTree = "<group>"; };
+		14ECBE301E8C337C003B4BAC /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		14ECBE311E8C337C003B4BAC /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		14ECBE321E8C337C003B4BAC /* MDPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		14ECBE331E8C337C003B4BAC /* resources.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = resources.map; sourceTree = "<group>"; };
+		14ECBE351E8C337C003B4BAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Sapphire.xcodeproj; sourceTree = "<group>"; };
+		14ECBE3A1E8C337C003B4BAC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		14ECBE3B1E8C337C003B4BAC /* Cargo.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.lock; sourceTree = "<group>"; };
+		14ECBE3C1E8C337C003B4BAC /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
+		14ECBE3E1E8C337C003B4BAC /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		14ECBE411E8C337C003B4BAC /* .cargo-lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".cargo-lock"; sourceTree = "<group>"; };
+		14ECBE441E8C337C003B4BAC /* dep-lib-byteorder-2719b2b22cb17733 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-byteorder-2719b2b22cb17733"; sourceTree = "<group>"; };
+		14ECBE451E8C337C003B4BAC /* lib-byteorder-2719b2b22cb17733 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-byteorder-2719b2b22cb17733"; sourceTree = "<group>"; };
+		14ECBE461E8C337C003B4BAC /* lib-byteorder-2719b2b22cb17733.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-byteorder-2719b2b22cb17733.json"; sourceTree = "<group>"; };
+		14ECBE481E8C337C003B4BAC /* dep-lib-byteorder-7cfda82550a1de2e */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-byteorder-7cfda82550a1de2e"; sourceTree = "<group>"; };
+		14ECBE491E8C337C003B4BAC /* lib-byteorder-7cfda82550a1de2e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-byteorder-7cfda82550a1de2e"; sourceTree = "<group>"; };
+		14ECBE4A1E8C337C003B4BAC /* lib-byteorder-7cfda82550a1de2e.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-byteorder-7cfda82550a1de2e.json"; sourceTree = "<group>"; };
+		14ECBE4C1E8C337C003B4BAC /* dep-lib-encoding-1c7ad36a9dff3ebd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding-1c7ad36a9dff3ebd"; sourceTree = "<group>"; };
+		14ECBE4D1E8C337C003B4BAC /* lib-encoding-1c7ad36a9dff3ebd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding-1c7ad36a9dff3ebd"; sourceTree = "<group>"; };
+		14ECBE4E1E8C337C003B4BAC /* lib-encoding-1c7ad36a9dff3ebd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding-1c7ad36a9dff3ebd.json"; sourceTree = "<group>"; };
+		14ECBE501E8C337C003B4BAC /* dep-lib-encoding-db617b2c7ed04d32 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding-db617b2c7ed04d32"; sourceTree = "<group>"; };
+		14ECBE511E8C337C003B4BAC /* lib-encoding-db617b2c7ed04d32 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding-db617b2c7ed04d32"; sourceTree = "<group>"; };
+		14ECBE521E8C337C003B4BAC /* lib-encoding-db617b2c7ed04d32.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding-db617b2c7ed04d32.json"; sourceTree = "<group>"; };
+		14ECBE541E8C337C003B4BAC /* dep-lib-encoding_index_japanese-b4d676a9601da218 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_japanese-b4d676a9601da218"; sourceTree = "<group>"; };
+		14ECBE551E8C337C003B4BAC /* lib-encoding_index_japanese-b4d676a9601da218 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_japanese-b4d676a9601da218"; sourceTree = "<group>"; };
+		14ECBE561E8C337C003B4BAC /* lib-encoding_index_japanese-b4d676a9601da218.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_japanese-b4d676a9601da218.json"; sourceTree = "<group>"; };
+		14ECBE581E8C337C003B4BAC /* dep-lib-encoding_index_japanese-cf562b0993718df2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_japanese-cf562b0993718df2"; sourceTree = "<group>"; };
+		14ECBE591E8C337C003B4BAC /* lib-encoding_index_japanese-cf562b0993718df2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_japanese-cf562b0993718df2"; sourceTree = "<group>"; };
+		14ECBE5A1E8C337C003B4BAC /* lib-encoding_index_japanese-cf562b0993718df2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_japanese-cf562b0993718df2.json"; sourceTree = "<group>"; };
+		14ECBE5C1E8C337C003B4BAC /* dep-lib-encoding_index_korean-9e0eb48bd6ad60d0 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_korean-9e0eb48bd6ad60d0"; sourceTree = "<group>"; };
+		14ECBE5D1E8C337C003B4BAC /* lib-encoding_index_korean-9e0eb48bd6ad60d0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_korean-9e0eb48bd6ad60d0"; sourceTree = "<group>"; };
+		14ECBE5E1E8C337C003B4BAC /* lib-encoding_index_korean-9e0eb48bd6ad60d0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_korean-9e0eb48bd6ad60d0.json"; sourceTree = "<group>"; };
+		14ECBE601E8C337C003B4BAC /* dep-lib-encoding_index_korean-e7abdc794ded6bf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_korean-e7abdc794ded6bf2"; sourceTree = "<group>"; };
+		14ECBE611E8C337C003B4BAC /* lib-encoding_index_korean-e7abdc794ded6bf2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_korean-e7abdc794ded6bf2"; sourceTree = "<group>"; };
+		14ECBE621E8C337C003B4BAC /* lib-encoding_index_korean-e7abdc794ded6bf2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_korean-e7abdc794ded6bf2.json"; sourceTree = "<group>"; };
+		14ECBE641E8C337C003B4BAC /* dep-lib-encoding_index_simpchinese-0fac8f9c3c622a0e */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_simpchinese-0fac8f9c3c622a0e"; sourceTree = "<group>"; };
+		14ECBE651E8C337C003B4BAC /* lib-encoding_index_simpchinese-0fac8f9c3c622a0e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_simpchinese-0fac8f9c3c622a0e"; sourceTree = "<group>"; };
+		14ECBE661E8C337C003B4BAC /* lib-encoding_index_simpchinese-0fac8f9c3c622a0e.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_simpchinese-0fac8f9c3c622a0e.json"; sourceTree = "<group>"; };
+		14ECBE681E8C337C003B4BAC /* dep-lib-encoding_index_simpchinese-5966d26bea53a6c6 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_simpchinese-5966d26bea53a6c6"; sourceTree = "<group>"; };
+		14ECBE691E8C337C003B4BAC /* lib-encoding_index_simpchinese-5966d26bea53a6c6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_simpchinese-5966d26bea53a6c6"; sourceTree = "<group>"; };
+		14ECBE6A1E8C337C003B4BAC /* lib-encoding_index_simpchinese-5966d26bea53a6c6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_simpchinese-5966d26bea53a6c6.json"; sourceTree = "<group>"; };
+		14ECBE6C1E8C337C003B4BAC /* dep-lib-encoding_index_singlebyte-e294c2686bc8b521 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_singlebyte-e294c2686bc8b521"; sourceTree = "<group>"; };
+		14ECBE6D1E8C337C003B4BAC /* lib-encoding_index_singlebyte-e294c2686bc8b521 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_singlebyte-e294c2686bc8b521"; sourceTree = "<group>"; };
+		14ECBE6E1E8C337C003B4BAC /* lib-encoding_index_singlebyte-e294c2686bc8b521.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_singlebyte-e294c2686bc8b521.json"; sourceTree = "<group>"; };
+		14ECBE701E8C337C003B4BAC /* dep-lib-encoding_index_singlebyte-e3be708e447dd1a2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_singlebyte-e3be708e447dd1a2"; sourceTree = "<group>"; };
+		14ECBE711E8C337C003B4BAC /* lib-encoding_index_singlebyte-e3be708e447dd1a2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_singlebyte-e3be708e447dd1a2"; sourceTree = "<group>"; };
+		14ECBE721E8C337C003B4BAC /* lib-encoding_index_singlebyte-e3be708e447dd1a2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_singlebyte-e3be708e447dd1a2.json"; sourceTree = "<group>"; };
+		14ECBE741E8C337C003B4BAC /* dep-lib-encoding_index_tradchinese-45ce02a614b82453 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_tradchinese-45ce02a614b82453"; sourceTree = "<group>"; };
+		14ECBE751E8C337C003B4BAC /* lib-encoding_index_tradchinese-45ce02a614b82453 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_tradchinese-45ce02a614b82453"; sourceTree = "<group>"; };
+		14ECBE761E8C337C003B4BAC /* lib-encoding_index_tradchinese-45ce02a614b82453.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_tradchinese-45ce02a614b82453.json"; sourceTree = "<group>"; };
+		14ECBE781E8C337C003B4BAC /* dep-lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a"; sourceTree = "<group>"; };
+		14ECBE791E8C337C003B4BAC /* lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a"; sourceTree = "<group>"; };
+		14ECBE7A1E8C337C003B4BAC /* lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a.json"; sourceTree = "<group>"; };
+		14ECBE7C1E8C337C003B4BAC /* dep-lib-encoding_index_tests-502c5965192faf7d */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_tests-502c5965192faf7d"; sourceTree = "<group>"; };
+		14ECBE7D1E8C337C003B4BAC /* lib-encoding_index_tests-502c5965192faf7d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_tests-502c5965192faf7d"; sourceTree = "<group>"; };
+		14ECBE7E1E8C337C003B4BAC /* lib-encoding_index_tests-502c5965192faf7d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_tests-502c5965192faf7d.json"; sourceTree = "<group>"; };
+		14ECBE801E8C337C003B4BAC /* dep-lib-encoding_index_tests-51ffc625275a7ca9 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-encoding_index_tests-51ffc625275a7ca9"; sourceTree = "<group>"; };
+		14ECBE811E8C337C003B4BAC /* lib-encoding_index_tests-51ffc625275a7ca9 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-encoding_index_tests-51ffc625275a7ca9"; sourceTree = "<group>"; };
+		14ECBE821E8C337C003B4BAC /* lib-encoding_index_tests-51ffc625275a7ca9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-encoding_index_tests-51ffc625275a7ca9.json"; sourceTree = "<group>"; };
+		14ECBE841E8C337C003B4BAC /* dep-lib-piranha-7dd4db0114b8acb7 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-piranha-7dd4db0114b8acb7"; sourceTree = "<group>"; };
+		14ECBE851E8C337C003B4BAC /* lib-piranha-7dd4db0114b8acb7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-piranha-7dd4db0114b8acb7"; sourceTree = "<group>"; };
+		14ECBE861E8C337C003B4BAC /* lib-piranha-7dd4db0114b8acb7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-piranha-7dd4db0114b8acb7.json"; sourceTree = "<group>"; };
+		14ECBE881E8C337C003B4BAC /* dep-lib-piranha-b0efb91e60379aa9 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-piranha-b0efb91e60379aa9"; sourceTree = "<group>"; };
+		14ECBE891E8C337C003B4BAC /* lib-piranha-b0efb91e60379aa9 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-piranha-b0efb91e60379aa9"; sourceTree = "<group>"; };
+		14ECBE8A1E8C337C003B4BAC /* lib-piranha-b0efb91e60379aa9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-piranha-b0efb91e60379aa9.json"; sourceTree = "<group>"; };
+		14ECBE8C1E8C337C003B4BAC /* dep-lib-piranha-bfc01ec476bd7825 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-piranha-bfc01ec476bd7825"; sourceTree = "<group>"; };
+		14ECBE8D1E8C337C003B4BAC /* lib-piranha-bfc01ec476bd7825 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-piranha-bfc01ec476bd7825"; sourceTree = "<group>"; };
+		14ECBE8E1E8C337C003B4BAC /* lib-piranha-bfc01ec476bd7825.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-piranha-bfc01ec476bd7825.json"; sourceTree = "<group>"; };
+		14ECBE901E8C337C003B4BAC /* dep-lib-piranha-d7faceaa2ad9c156 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-piranha-d7faceaa2ad9c156"; sourceTree = "<group>"; };
+		14ECBE911E8C337C003B4BAC /* lib-piranha-d7faceaa2ad9c156 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-piranha-d7faceaa2ad9c156"; sourceTree = "<group>"; };
+		14ECBE921E8C337C003B4BAC /* lib-piranha-d7faceaa2ad9c156.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-piranha-d7faceaa2ad9c156.json"; sourceTree = "<group>"; };
+		14ECBE941E8C337C003B4BAC /* dep-lib-sapphire_r-1e10891235559bd3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-sapphire_r-1e10891235559bd3"; sourceTree = "<group>"; };
+		14ECBE951E8C337C003B4BAC /* lib-sapphire_r-1e10891235559bd3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-sapphire_r-1e10891235559bd3"; sourceTree = "<group>"; };
+		14ECBE961E8C337C003B4BAC /* lib-sapphire_r-1e10891235559bd3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-sapphire_r-1e10891235559bd3.json"; sourceTree = "<group>"; };
+		14ECBE981E8C337C003B4BAC /* dep-lib-sapphire_r-bdcb0db5f362c9d0 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-sapphire_r-bdcb0db5f362c9d0"; sourceTree = "<group>"; };
+		14ECBE991E8C337C003B4BAC /* lib-sapphire_r-bdcb0db5f362c9d0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-sapphire_r-bdcb0db5f362c9d0"; sourceTree = "<group>"; };
+		14ECBE9A1E8C337C003B4BAC /* lib-sapphire_r-bdcb0db5f362c9d0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-sapphire_r-bdcb0db5f362c9d0.json"; sourceTree = "<group>"; };
+		14ECBE9C1E8C337C003B4BAC /* dep-lib-tritium-1f73c3500e683bd0 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-tritium-1f73c3500e683bd0"; sourceTree = "<group>"; };
+		14ECBE9D1E8C337C003B4BAC /* lib-tritium-1f73c3500e683bd0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-tritium-1f73c3500e683bd0"; sourceTree = "<group>"; };
+		14ECBE9E1E8C337C003B4BAC /* lib-tritium-1f73c3500e683bd0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-tritium-1f73c3500e683bd0.json"; sourceTree = "<group>"; };
+		14ECBEA01E8C337C003B4BAC /* dep-lib-tritium-8c9cbb250ba674f7 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-tritium-8c9cbb250ba674f7"; sourceTree = "<group>"; };
+		14ECBEA11E8C337C003B4BAC /* lib-tritium-8c9cbb250ba674f7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-tritium-8c9cbb250ba674f7"; sourceTree = "<group>"; };
+		14ECBEA21E8C337C003B4BAC /* lib-tritium-8c9cbb250ba674f7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-tritium-8c9cbb250ba674f7.json"; sourceTree = "<group>"; };
+		14ECBEA41E8C337C003B4BAC /* dep-lib-tritium-a50556c512de730b */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-tritium-a50556c512de730b"; sourceTree = "<group>"; };
+		14ECBEA51E8C337C003B4BAC /* lib-tritium-a50556c512de730b */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-tritium-a50556c512de730b"; sourceTree = "<group>"; };
+		14ECBEA61E8C337C003B4BAC /* lib-tritium-a50556c512de730b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-tritium-a50556c512de730b.json"; sourceTree = "<group>"; };
+		14ECBEA81E8C337C003B4BAC /* dep-lib-tritium-c8382ad8331ad588 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dep-lib-tritium-c8382ad8331ad588"; sourceTree = "<group>"; };
+		14ECBEA91E8C337C003B4BAC /* lib-tritium-c8382ad8331ad588 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lib-tritium-c8382ad8331ad588"; sourceTree = "<group>"; };
+		14ECBEAA1E8C337C003B4BAC /* lib-tritium-c8382ad8331ad588.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lib-tritium-c8382ad8331ad588.json"; sourceTree = "<group>"; };
+		14ECBEAB1E8C337C003B4BAC /* libsapphire_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsapphire_r.a; sourceTree = "<group>"; };
+		14ECBEAC1E8C337C003B4BAC /* sounds_diff.rmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = sounds_diff.rmap; sourceTree = "<group>"; };
+		14ECBEAD1E8C337C003B4BAC /* ZZTSapphire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTSapphire.h; sourceTree = "<group>"; };
+		14ECBEAE1E8C337C003B4BAC /* ZZTSapphire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTSapphire.m; sourceTree = "<group>"; };
+		14ECBF0D1E8C33CB003B4BAC /* ce.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = ce.map; sourceTree = "<group>"; };
+		14ECBF0F1E8C33CB003B4BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ECBF101E8C33CB003B4BAC /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		14ECBF111E8C33CB003B4BAC /* ZZCELobby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCELobby.h; sourceTree = "<group>"; };
+		14ECBF121E8C33CB003B4BAC /* ZZCELobby.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCELobby.m; sourceTree = "<group>"; };
+		14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CustomEditionLobby.xcodeproj; sourceTree = "<group>"; };
+		14ECBF161E8C33CB003B4BAC /* mach_override.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		14ECBF171E8C33CB003B4BAC /* mach_override.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		14ECBF1C1E8C33F5003B4BAC /* Halo+.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Halo+.xcodeproj"; sourceTree = "<group>"; };
+		14ECBF211E8C33F5003B4BAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14ECBF221E8C33F5003B4BAC /* Halo Graphics Update-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Halo Graphics Update-Info.plist"; sourceTree = "<group>"; };
+		14ECBF231E8C33F5003B4BAC /* Halo Graphics Update-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Halo Graphics Update-Prefix.pch"; sourceTree = "<group>"; };
+		14ECBF241E8C33F5003B4BAC /* mach_override.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		14ECBF251E8C33F5003B4BAC /* mach_override.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		14ECBF261E8C33F5003B4BAC /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		14ECBF271E8C33F5003B4BAC /* SMHaloUP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHaloUP.h; sourceTree = "<group>"; };
+		14ECBF281E8C33F5003B4BAC /* SMHaloUP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHaloUP.m; sourceTree = "<group>"; };
+		14ECBF291E8C33F5003B4BAC /* research.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = research.h; sourceTree = "<group>"; };
 		26707D1B1A6C2250009E7FAD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		26C51A0A1E0D845F000C1738 /* MDPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPreferencesWindowController.h; sourceTree = "<group>"; };
 		26C51A0B1E0D845F000C1738 /* MDPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPreferencesWindowController.m; sourceTree = "<group>"; };
@@ -684,6 +851,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26707D1C1A6C2250009E7FAD /* IOKit.framework in Frameworks */,
+				1470F7891E8C300000FF694F /* Carbon.framework in Frameworks */,
 				DA3FB80419DD06C6004167A9 /* libxml2.dylib in Frameworks */,
 				DA3FB80219DD06B9004167A9 /* Cocoa.framework in Frameworks */,
 				775E62761944E5E5005AC209 /* CoreLocation.framework in Frameworks */,
@@ -691,6 +859,7 @@
 				775E62721944E44C005AC209 /* Security.framework in Frameworks */,
 				773E8ADE1820C7CE00D1A71A /* AppKit.framework in Frameworks */,
 				773E8ADB1820C7C000D1A71A /* Foundation.framework in Frameworks */,
+				1470F7851E8C2D3300FF694F /* OpenGL.framework in Frameworks */,
 				77CF348615DA33FB005ECB2F /* CoreServices.framework in Frameworks */,
 				77E52D2616D8A2640015246C /* WebKit.framework in Frameworks */,
 				77E7E2951724B16000E18FB9 /* IOKit.framework in Frameworks */,
@@ -737,6 +906,438 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14ECBE2B1E8C337C003B4BAC /* Sapphire */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE2C1E8C337C003B4BAC /* bitmaps.map */,
+				14ECBE2D1E8C337C003B4BAC /* bitmaps_diff.rmap */,
+				14ECBE2E1E8C337C003B4BAC /* Info.plist */,
+				14ECBE2F1E8C337C003B4BAC /* loc.map */,
+				14ECBE301E8C337C003B4BAC /* mach_override.c */,
+				14ECBE311E8C337C003B4BAC /* mach_override.h */,
+				14ECBE321E8C337C003B4BAC /* MDPlugin.h */,
+				14ECBE331E8C337C003B4BAC /* resources.map */,
+				14ECBE341E8C337C003B4BAC /* Sapphire */,
+				14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */,
+				14ECBE391E8C337C003B4BAC /* sapphire_r */,
+				14ECBEAC1E8C337C003B4BAC /* sounds_diff.rmap */,
+				14ECBEAD1E8C337C003B4BAC /* ZZTSapphire.h */,
+				14ECBEAE1E8C337C003B4BAC /* ZZTSapphire.m */,
+			);
+			path = Sapphire;
+			sourceTree = "<group>";
+		};
+		14ECBE341E8C337C003B4BAC /* Sapphire */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE351E8C337C003B4BAC /* Info.plist */,
+			);
+			path = Sapphire;
+			sourceTree = "<group>";
+		};
+		14ECBE371E8C337C003B4BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF0B1E8C337C003B4BAC /* Sapphire.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14ECBE391E8C337C003B4BAC /* sapphire_r */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE3A1E8C337C003B4BAC /* .gitignore */,
+				14ECBE3B1E8C337C003B4BAC /* Cargo.lock */,
+				14ECBE3C1E8C337C003B4BAC /* Cargo.toml */,
+				14ECBE3D1E8C337C003B4BAC /* src */,
+				14ECBE3F1E8C337C003B4BAC /* target */,
+			);
+			path = sapphire_r;
+			sourceTree = "<group>";
+		};
+		14ECBE3D1E8C337C003B4BAC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE3E1E8C337C003B4BAC /* lib.rs */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		14ECBE3F1E8C337C003B4BAC /* target */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE401E8C337C003B4BAC /* release */,
+			);
+			path = target;
+			sourceTree = "<group>";
+		};
+		14ECBE401E8C337C003B4BAC /* release */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE411E8C337C003B4BAC /* .cargo-lock */,
+				14ECBE421E8C337C003B4BAC /* .fingerprint */,
+				14ECBEAB1E8C337C003B4BAC /* libsapphire_r.a */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		14ECBE421E8C337C003B4BAC /* .fingerprint */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE431E8C337C003B4BAC /* byteorder-2719b2b22cb17733 */,
+				14ECBE471E8C337C003B4BAC /* byteorder-7cfda82550a1de2e */,
+				14ECBE4B1E8C337C003B4BAC /* encoding-1c7ad36a9dff3ebd */,
+				14ECBE4F1E8C337C003B4BAC /* encoding-db617b2c7ed04d32 */,
+				14ECBE531E8C337C003B4BAC /* encoding-index-japanese-b4d676a9601da218 */,
+				14ECBE571E8C337C003B4BAC /* encoding-index-japanese-cf562b0993718df2 */,
+				14ECBE5B1E8C337C003B4BAC /* encoding-index-korean-9e0eb48bd6ad60d0 */,
+				14ECBE5F1E8C337C003B4BAC /* encoding-index-korean-e7abdc794ded6bf2 */,
+				14ECBE631E8C337C003B4BAC /* encoding-index-simpchinese-0fac8f9c3c622a0e */,
+				14ECBE671E8C337C003B4BAC /* encoding-index-simpchinese-5966d26bea53a6c6 */,
+				14ECBE6B1E8C337C003B4BAC /* encoding-index-singlebyte-e294c2686bc8b521 */,
+				14ECBE6F1E8C337C003B4BAC /* encoding-index-singlebyte-e3be708e447dd1a2 */,
+				14ECBE731E8C337C003B4BAC /* encoding-index-tradchinese-45ce02a614b82453 */,
+				14ECBE771E8C337C003B4BAC /* encoding-index-tradchinese-b3fbf37ffb7e0f2a */,
+				14ECBE7B1E8C337C003B4BAC /* encoding_index_tests-502c5965192faf7d */,
+				14ECBE7F1E8C337C003B4BAC /* encoding_index_tests-51ffc625275a7ca9 */,
+				14ECBE831E8C337C003B4BAC /* piranha-7dd4db0114b8acb7 */,
+				14ECBE871E8C337C003B4BAC /* piranha-b0efb91e60379aa9 */,
+				14ECBE8B1E8C337C003B4BAC /* piranha-bfc01ec476bd7825 */,
+				14ECBE8F1E8C337C003B4BAC /* piranha-d7faceaa2ad9c156 */,
+				14ECBE931E8C337C003B4BAC /* sapphire_r-1e10891235559bd3 */,
+				14ECBE971E8C337C003B4BAC /* sapphire_r-bdcb0db5f362c9d0 */,
+				14ECBE9B1E8C337C003B4BAC /* tritium-1f73c3500e683bd0 */,
+				14ECBE9F1E8C337C003B4BAC /* tritium-8c9cbb250ba674f7 */,
+				14ECBEA31E8C337C003B4BAC /* tritium-a50556c512de730b */,
+				14ECBEA71E8C337C003B4BAC /* tritium-c8382ad8331ad588 */,
+			);
+			path = .fingerprint;
+			sourceTree = "<group>";
+		};
+		14ECBE431E8C337C003B4BAC /* byteorder-2719b2b22cb17733 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE441E8C337C003B4BAC /* dep-lib-byteorder-2719b2b22cb17733 */,
+				14ECBE451E8C337C003B4BAC /* lib-byteorder-2719b2b22cb17733 */,
+				14ECBE461E8C337C003B4BAC /* lib-byteorder-2719b2b22cb17733.json */,
+			);
+			path = "byteorder-2719b2b22cb17733";
+			sourceTree = "<group>";
+		};
+		14ECBE471E8C337C003B4BAC /* byteorder-7cfda82550a1de2e */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE481E8C337C003B4BAC /* dep-lib-byteorder-7cfda82550a1de2e */,
+				14ECBE491E8C337C003B4BAC /* lib-byteorder-7cfda82550a1de2e */,
+				14ECBE4A1E8C337C003B4BAC /* lib-byteorder-7cfda82550a1de2e.json */,
+			);
+			path = "byteorder-7cfda82550a1de2e";
+			sourceTree = "<group>";
+		};
+		14ECBE4B1E8C337C003B4BAC /* encoding-1c7ad36a9dff3ebd */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE4C1E8C337C003B4BAC /* dep-lib-encoding-1c7ad36a9dff3ebd */,
+				14ECBE4D1E8C337C003B4BAC /* lib-encoding-1c7ad36a9dff3ebd */,
+				14ECBE4E1E8C337C003B4BAC /* lib-encoding-1c7ad36a9dff3ebd.json */,
+			);
+			path = "encoding-1c7ad36a9dff3ebd";
+			sourceTree = "<group>";
+		};
+		14ECBE4F1E8C337C003B4BAC /* encoding-db617b2c7ed04d32 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE501E8C337C003B4BAC /* dep-lib-encoding-db617b2c7ed04d32 */,
+				14ECBE511E8C337C003B4BAC /* lib-encoding-db617b2c7ed04d32 */,
+				14ECBE521E8C337C003B4BAC /* lib-encoding-db617b2c7ed04d32.json */,
+			);
+			path = "encoding-db617b2c7ed04d32";
+			sourceTree = "<group>";
+		};
+		14ECBE531E8C337C003B4BAC /* encoding-index-japanese-b4d676a9601da218 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE541E8C337C003B4BAC /* dep-lib-encoding_index_japanese-b4d676a9601da218 */,
+				14ECBE551E8C337C003B4BAC /* lib-encoding_index_japanese-b4d676a9601da218 */,
+				14ECBE561E8C337C003B4BAC /* lib-encoding_index_japanese-b4d676a9601da218.json */,
+			);
+			path = "encoding-index-japanese-b4d676a9601da218";
+			sourceTree = "<group>";
+		};
+		14ECBE571E8C337C003B4BAC /* encoding-index-japanese-cf562b0993718df2 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE581E8C337C003B4BAC /* dep-lib-encoding_index_japanese-cf562b0993718df2 */,
+				14ECBE591E8C337C003B4BAC /* lib-encoding_index_japanese-cf562b0993718df2 */,
+				14ECBE5A1E8C337C003B4BAC /* lib-encoding_index_japanese-cf562b0993718df2.json */,
+			);
+			path = "encoding-index-japanese-cf562b0993718df2";
+			sourceTree = "<group>";
+		};
+		14ECBE5B1E8C337C003B4BAC /* encoding-index-korean-9e0eb48bd6ad60d0 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE5C1E8C337C003B4BAC /* dep-lib-encoding_index_korean-9e0eb48bd6ad60d0 */,
+				14ECBE5D1E8C337C003B4BAC /* lib-encoding_index_korean-9e0eb48bd6ad60d0 */,
+				14ECBE5E1E8C337C003B4BAC /* lib-encoding_index_korean-9e0eb48bd6ad60d0.json */,
+			);
+			path = "encoding-index-korean-9e0eb48bd6ad60d0";
+			sourceTree = "<group>";
+		};
+		14ECBE5F1E8C337C003B4BAC /* encoding-index-korean-e7abdc794ded6bf2 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE601E8C337C003B4BAC /* dep-lib-encoding_index_korean-e7abdc794ded6bf2 */,
+				14ECBE611E8C337C003B4BAC /* lib-encoding_index_korean-e7abdc794ded6bf2 */,
+				14ECBE621E8C337C003B4BAC /* lib-encoding_index_korean-e7abdc794ded6bf2.json */,
+			);
+			path = "encoding-index-korean-e7abdc794ded6bf2";
+			sourceTree = "<group>";
+		};
+		14ECBE631E8C337C003B4BAC /* encoding-index-simpchinese-0fac8f9c3c622a0e */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE641E8C337C003B4BAC /* dep-lib-encoding_index_simpchinese-0fac8f9c3c622a0e */,
+				14ECBE651E8C337C003B4BAC /* lib-encoding_index_simpchinese-0fac8f9c3c622a0e */,
+				14ECBE661E8C337C003B4BAC /* lib-encoding_index_simpchinese-0fac8f9c3c622a0e.json */,
+			);
+			path = "encoding-index-simpchinese-0fac8f9c3c622a0e";
+			sourceTree = "<group>";
+		};
+		14ECBE671E8C337C003B4BAC /* encoding-index-simpchinese-5966d26bea53a6c6 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE681E8C337C003B4BAC /* dep-lib-encoding_index_simpchinese-5966d26bea53a6c6 */,
+				14ECBE691E8C337C003B4BAC /* lib-encoding_index_simpchinese-5966d26bea53a6c6 */,
+				14ECBE6A1E8C337C003B4BAC /* lib-encoding_index_simpchinese-5966d26bea53a6c6.json */,
+			);
+			path = "encoding-index-simpchinese-5966d26bea53a6c6";
+			sourceTree = "<group>";
+		};
+		14ECBE6B1E8C337C003B4BAC /* encoding-index-singlebyte-e294c2686bc8b521 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE6C1E8C337C003B4BAC /* dep-lib-encoding_index_singlebyte-e294c2686bc8b521 */,
+				14ECBE6D1E8C337C003B4BAC /* lib-encoding_index_singlebyte-e294c2686bc8b521 */,
+				14ECBE6E1E8C337C003B4BAC /* lib-encoding_index_singlebyte-e294c2686bc8b521.json */,
+			);
+			path = "encoding-index-singlebyte-e294c2686bc8b521";
+			sourceTree = "<group>";
+		};
+		14ECBE6F1E8C337C003B4BAC /* encoding-index-singlebyte-e3be708e447dd1a2 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE701E8C337C003B4BAC /* dep-lib-encoding_index_singlebyte-e3be708e447dd1a2 */,
+				14ECBE711E8C337C003B4BAC /* lib-encoding_index_singlebyte-e3be708e447dd1a2 */,
+				14ECBE721E8C337C003B4BAC /* lib-encoding_index_singlebyte-e3be708e447dd1a2.json */,
+			);
+			path = "encoding-index-singlebyte-e3be708e447dd1a2";
+			sourceTree = "<group>";
+		};
+		14ECBE731E8C337C003B4BAC /* encoding-index-tradchinese-45ce02a614b82453 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE741E8C337C003B4BAC /* dep-lib-encoding_index_tradchinese-45ce02a614b82453 */,
+				14ECBE751E8C337C003B4BAC /* lib-encoding_index_tradchinese-45ce02a614b82453 */,
+				14ECBE761E8C337C003B4BAC /* lib-encoding_index_tradchinese-45ce02a614b82453.json */,
+			);
+			path = "encoding-index-tradchinese-45ce02a614b82453";
+			sourceTree = "<group>";
+		};
+		14ECBE771E8C337C003B4BAC /* encoding-index-tradchinese-b3fbf37ffb7e0f2a */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE781E8C337C003B4BAC /* dep-lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a */,
+				14ECBE791E8C337C003B4BAC /* lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a */,
+				14ECBE7A1E8C337C003B4BAC /* lib-encoding_index_tradchinese-b3fbf37ffb7e0f2a.json */,
+			);
+			path = "encoding-index-tradchinese-b3fbf37ffb7e0f2a";
+			sourceTree = "<group>";
+		};
+		14ECBE7B1E8C337C003B4BAC /* encoding_index_tests-502c5965192faf7d */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE7C1E8C337C003B4BAC /* dep-lib-encoding_index_tests-502c5965192faf7d */,
+				14ECBE7D1E8C337C003B4BAC /* lib-encoding_index_tests-502c5965192faf7d */,
+				14ECBE7E1E8C337C003B4BAC /* lib-encoding_index_tests-502c5965192faf7d.json */,
+			);
+			path = "encoding_index_tests-502c5965192faf7d";
+			sourceTree = "<group>";
+		};
+		14ECBE7F1E8C337C003B4BAC /* encoding_index_tests-51ffc625275a7ca9 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE801E8C337C003B4BAC /* dep-lib-encoding_index_tests-51ffc625275a7ca9 */,
+				14ECBE811E8C337C003B4BAC /* lib-encoding_index_tests-51ffc625275a7ca9 */,
+				14ECBE821E8C337C003B4BAC /* lib-encoding_index_tests-51ffc625275a7ca9.json */,
+			);
+			path = "encoding_index_tests-51ffc625275a7ca9";
+			sourceTree = "<group>";
+		};
+		14ECBE831E8C337C003B4BAC /* piranha-7dd4db0114b8acb7 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE841E8C337C003B4BAC /* dep-lib-piranha-7dd4db0114b8acb7 */,
+				14ECBE851E8C337C003B4BAC /* lib-piranha-7dd4db0114b8acb7 */,
+				14ECBE861E8C337C003B4BAC /* lib-piranha-7dd4db0114b8acb7.json */,
+			);
+			path = "piranha-7dd4db0114b8acb7";
+			sourceTree = "<group>";
+		};
+		14ECBE871E8C337C003B4BAC /* piranha-b0efb91e60379aa9 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE881E8C337C003B4BAC /* dep-lib-piranha-b0efb91e60379aa9 */,
+				14ECBE891E8C337C003B4BAC /* lib-piranha-b0efb91e60379aa9 */,
+				14ECBE8A1E8C337C003B4BAC /* lib-piranha-b0efb91e60379aa9.json */,
+			);
+			path = "piranha-b0efb91e60379aa9";
+			sourceTree = "<group>";
+		};
+		14ECBE8B1E8C337C003B4BAC /* piranha-bfc01ec476bd7825 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE8C1E8C337C003B4BAC /* dep-lib-piranha-bfc01ec476bd7825 */,
+				14ECBE8D1E8C337C003B4BAC /* lib-piranha-bfc01ec476bd7825 */,
+				14ECBE8E1E8C337C003B4BAC /* lib-piranha-bfc01ec476bd7825.json */,
+			);
+			path = "piranha-bfc01ec476bd7825";
+			sourceTree = "<group>";
+		};
+		14ECBE8F1E8C337C003B4BAC /* piranha-d7faceaa2ad9c156 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE901E8C337C003B4BAC /* dep-lib-piranha-d7faceaa2ad9c156 */,
+				14ECBE911E8C337C003B4BAC /* lib-piranha-d7faceaa2ad9c156 */,
+				14ECBE921E8C337C003B4BAC /* lib-piranha-d7faceaa2ad9c156.json */,
+			);
+			path = "piranha-d7faceaa2ad9c156";
+			sourceTree = "<group>";
+		};
+		14ECBE931E8C337C003B4BAC /* sapphire_r-1e10891235559bd3 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE941E8C337C003B4BAC /* dep-lib-sapphire_r-1e10891235559bd3 */,
+				14ECBE951E8C337C003B4BAC /* lib-sapphire_r-1e10891235559bd3 */,
+				14ECBE961E8C337C003B4BAC /* lib-sapphire_r-1e10891235559bd3.json */,
+			);
+			path = "sapphire_r-1e10891235559bd3";
+			sourceTree = "<group>";
+		};
+		14ECBE971E8C337C003B4BAC /* sapphire_r-bdcb0db5f362c9d0 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE981E8C337C003B4BAC /* dep-lib-sapphire_r-bdcb0db5f362c9d0 */,
+				14ECBE991E8C337C003B4BAC /* lib-sapphire_r-bdcb0db5f362c9d0 */,
+				14ECBE9A1E8C337C003B4BAC /* lib-sapphire_r-bdcb0db5f362c9d0.json */,
+			);
+			path = "sapphire_r-bdcb0db5f362c9d0";
+			sourceTree = "<group>";
+		};
+		14ECBE9B1E8C337C003B4BAC /* tritium-1f73c3500e683bd0 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBE9C1E8C337C003B4BAC /* dep-lib-tritium-1f73c3500e683bd0 */,
+				14ECBE9D1E8C337C003B4BAC /* lib-tritium-1f73c3500e683bd0 */,
+				14ECBE9E1E8C337C003B4BAC /* lib-tritium-1f73c3500e683bd0.json */,
+			);
+			path = "tritium-1f73c3500e683bd0";
+			sourceTree = "<group>";
+		};
+		14ECBE9F1E8C337C003B4BAC /* tritium-8c9cbb250ba674f7 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBEA01E8C337C003B4BAC /* dep-lib-tritium-8c9cbb250ba674f7 */,
+				14ECBEA11E8C337C003B4BAC /* lib-tritium-8c9cbb250ba674f7 */,
+				14ECBEA21E8C337C003B4BAC /* lib-tritium-8c9cbb250ba674f7.json */,
+			);
+			path = "tritium-8c9cbb250ba674f7";
+			sourceTree = "<group>";
+		};
+		14ECBEA31E8C337C003B4BAC /* tritium-a50556c512de730b */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBEA41E8C337C003B4BAC /* dep-lib-tritium-a50556c512de730b */,
+				14ECBEA51E8C337C003B4BAC /* lib-tritium-a50556c512de730b */,
+				14ECBEA61E8C337C003B4BAC /* lib-tritium-a50556c512de730b.json */,
+			);
+			path = "tritium-a50556c512de730b";
+			sourceTree = "<group>";
+		};
+		14ECBEA71E8C337C003B4BAC /* tritium-c8382ad8331ad588 */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBEA81E8C337C003B4BAC /* dep-lib-tritium-c8382ad8331ad588 */,
+				14ECBEA91E8C337C003B4BAC /* lib-tritium-c8382ad8331ad588 */,
+				14ECBEAA1E8C337C003B4BAC /* lib-tritium-c8382ad8331ad588.json */,
+			);
+			path = "tritium-c8382ad8331ad588";
+			sourceTree = "<group>";
+		};
+		14ECBF0C1E8C33CB003B4BAC /* CustomEditionLobby */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF0D1E8C33CB003B4BAC /* ce.map */,
+				14ECBF0E1E8C33CB003B4BAC /* CustomEditionLobby */,
+				14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */,
+				14ECBF161E8C33CB003B4BAC /* mach_override.c */,
+				14ECBF171E8C33CB003B4BAC /* mach_override.h */,
+			);
+			path = CustomEditionLobby;
+			sourceTree = "<group>";
+		};
+		14ECBF0E1E8C33CB003B4BAC /* CustomEditionLobby */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF0F1E8C33CB003B4BAC /* Info.plist */,
+				14ECBF101E8C33CB003B4BAC /* MDPlugin.h */,
+				14ECBF111E8C33CB003B4BAC /* ZZCELobby.h */,
+				14ECBF121E8C33CB003B4BAC /* ZZCELobby.m */,
+			);
+			path = CustomEditionLobby;
+			sourceTree = "<group>";
+		};
+		14ECBF141E8C33CB003B4BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF1A1E8C33CB003B4BAC /* Custom Edition Lobby.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14ECBF1B1E8C33F5003B4BAC /* HaloUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF1C1E8C33F5003B4BAC /* Halo+.xcodeproj */,
+				14ECBF1F1E8C33F5003B4BAC /* HaloJS */,
+				14ECBF291E8C33F5003B4BAC /* research.h */,
+			);
+			path = HaloUpdate;
+			sourceTree = "<group>";
+		};
+		14ECBF1D1E8C33F5003B4BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF2C1E8C33F5003B4BAC /* Halo+.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14ECBF1F1E8C33F5003B4BAC /* HaloJS */ = {
+			isa = PBXGroup;
+			children = (
+				14ECBF201E8C33F5003B4BAC /* InfoPlist.strings */,
+				14ECBF221E8C33F5003B4BAC /* Halo Graphics Update-Info.plist */,
+				14ECBF231E8C33F5003B4BAC /* Halo Graphics Update-Prefix.pch */,
+				14ECBF241E8C33F5003B4BAC /* mach_override.c */,
+				14ECBF251E8C33F5003B4BAC /* mach_override.h */,
+				14ECBF261E8C33F5003B4BAC /* MDPlugin.h */,
+				14ECBF271E8C33F5003B4BAC /* SMHaloUP.h */,
+				14ECBF281E8C33F5003B4BAC /* SMHaloUP.m */,
+			);
+			path = HaloJS;
+			sourceTree = "<group>";
+		};
 		774EF67E17C7211F005ABB20 /* SCEvents */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +1376,8 @@
 		775B528C14D331C800B874E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1470F7881E8C300000FF694F /* Carbon.framework */,
+				1470F7841E8C2D3300FF694F /* OpenGL.framework */,
 				26707D1B1A6C2250009E7FAD /* IOKit.framework */,
 				DA3FB80319DD06C6004167A9 /* libxml2.dylib */,
 				DA3FB80119DD06B9004167A9 /* Cocoa.framework */,
@@ -1177,7 +1780,10 @@
 				77B10989185D8E210080BDDF /* MDPlugin.h */,
 				77BC6752184040A600F82849 /* plugin_handler.m */,
 				77E6C7031842B73100705ED5 /* mach_override */,
+				14ECBF1B1E8C33F5003B4BAC /* HaloUpdate */,
 				77FD5241187F5BF800E2A604 /* MapDownloader */,
+				14ECBE2B1E8C337C003B4BAC /* Sapphire */,
+				14ECBF0C1E8C33CB003B4BAC /* CustomEditionLobby */,
 				77E6C70B1842B7BE00705ED5 /* MapList */,
 				77BC678E184086DC00F82849 /* ChatTextRedirect */,
 			);
@@ -1304,6 +1910,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				14ECBF351E8C3457003B4BAC /* PBXTargetDependency */,
+				14ECBF331E8C3455003B4BAC /* PBXTargetDependency */,
+				14ECBF311E8C3452003B4BAC /* PBXTargetDependency */,
 				77FD526F187F5D3900E2A604 /* PBXTargetDependency */,
 				77BC675D184043B300F82849 /* PBXTargetDependency */,
 				77BC679F1840899D00F82849 /* PBXTargetDependency */,
@@ -1401,6 +2010,20 @@
 			mainGroup = 775B527E14D331C800B874E3;
 			productRefGroup = 775B528A14D331C800B874E3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 14ECBF141E8C33CB003B4BAC /* Products */;
+					ProjectRef = 14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */;
+				},
+				{
+					ProductGroup = 14ECBF1D1E8C33F5003B4BAC /* Products */;
+					ProjectRef = 14ECBF1C1E8C33F5003B4BAC /* Halo+.xcodeproj */;
+				},
+				{
+					ProductGroup = 14ECBE371E8C337C003B4BAC /* Products */;
+					ProjectRef = 14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				775B528814D331C800B874E3 /* HaloMD */,
@@ -1411,6 +2034,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		14ECBF0B1E8C337C003B4BAC /* Sapphire.mdplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Sapphire.mdplugin;
+			remoteRef = 14ECBF0A1E8C337C003B4BAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14ECBF1A1E8C33CB003B4BAC /* Custom Edition Lobby.mdplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Custom Edition Lobby.mdplugin";
+			remoteRef = 14ECBF191E8C33CB003B4BAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14ECBF2C1E8C33F5003B4BAC /* Halo+.mdplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Halo+.mdplugin";
+			remoteRef = 14ECBF2B1E8C33F5003B4BAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		775B528714D331C800B874E3 /* Resources */ = {
@@ -1678,6 +2325,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		14ECBF311E8C3452003B4BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Halo+";
+			targetProxy = 14ECBF301E8C3452003B4BAC /* PBXContainerItemProxy */;
+		};
+		14ECBF331E8C3455003B4BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sapphire;
+			targetProxy = 14ECBF321E8C3455003B4BAC /* PBXContainerItemProxy */;
+		};
+		14ECBF351E8C3457003B4BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CustomEditionLobby;
+			targetProxy = 14ECBF341E8C3457003B4BAC /* PBXContainerItemProxy */;
+		};
 		77BC675D184043B300F82849 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77BC674C1840405100F82849 /* MDOverrides */;
@@ -1701,6 +2363,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		14ECBF201E8C33F5003B4BAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14ECBF211E8C33F5003B4BAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		775B529614D331C800B874E3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1830,9 +2500,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/vendor\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/vendor",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaloMD/HaloMD-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1843,8 +2516,10 @@
 				INFOPLIST_FILE = "HaloMD/HaloMD-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/vendor",
+					"\"$(PROJECT_DIR)/vendor\"",
+					"$(PROJECT_DIR)/Sapphire/sapphire_r/target/release",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-lresolv",
 					"-Wl,-rpath,@loader_path/../Frameworks",
@@ -1864,9 +2539,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/vendor\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/vendor",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaloMD/HaloMD-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1877,8 +2555,10 @@
 				INFOPLIST_FILE = "HaloMD/HaloMD-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/vendor",
+					"\"$(PROJECT_DIR)/vendor\"",
+					"$(PROJECT_DIR)/Sapphire/sapphire_r/target/release",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-lresolv",
 					"-Wl,-rpath,@loader_path/../Frameworks",
