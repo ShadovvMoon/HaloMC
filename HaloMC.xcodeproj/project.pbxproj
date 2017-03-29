@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145144C21E8C46F2008ECE44 /* Aspect Ratio FOV Fixer.mdplugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 145144BF1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.mdplugin */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1470F7851E8C2D3300FF694F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1470F7841E8C2D3300FF694F /* OpenGL.framework */; };
 		1470F7891E8C300000FF694F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1470F7881E8C300000FF694F /* Carbon.framework */; };
 		14ECBF2D1E8C3411003B4BAC /* Halo+.mdplugin in Copy Plugins */ = {isa = PBXBuildFile; fileRef = 14ECBF2C1E8C33F5003B4BAC /* Halo+.mdplugin */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -222,6 +223,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		145144BE1E8C46B9008ECE44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145144BA1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9F6D921A4FB9A100460CB6;
+			remoteInfo = "Aspect Ratio FOV Fixer";
+		};
+		145144C01E8C46EF008ECE44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145144BA1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9F6D911A4FB9A100460CB6;
+			remoteInfo = "Aspect Ratio FOV Fixer";
+		};
 		14ECBF0A1E8C337C003B4BAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14ECBE361E8C337C003B4BAC /* Sapphire.xcodeproj */;
@@ -324,6 +339,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				145144C21E8C46F2008ECE44 /* Aspect Ratio FOV Fixer.mdplugin in Copy Plugins */,
 				14ECBF2F1E8C342D003B4BAC /* Custom Edition Lobby.mdplugin in Copy Plugins */,
 				14ECBF2E1E8C3417003B4BAC /* Sapphire.mdplugin in Copy Plugins */,
 				14ECBF2D1E8C3411003B4BAC /* Halo+.mdplugin in Copy Plugins */,
@@ -337,6 +353,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		145144B21E8C46B9008ECE44 /* AspectRatioFixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectRatioFixer.h; sourceTree = "<group>"; };
+		145144B31E8C46B9008ECE44 /* AspectRatioFixer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectRatioFixer.m; sourceTree = "<group>"; };
+		145144B41E8C46B9008ECE44 /* HaloMemoryStructs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HaloMemoryStructs.c; sourceTree = "<group>"; };
+		145144B51E8C46B9008ECE44 /* HaloMemoryStructs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaloMemoryStructs.h; sourceTree = "<group>"; };
+		145144B61E8C46B9008ECE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145144B71E8C46B9008ECE44 /* mach_override.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		145144B81E8C46B9008ECE44 /* mach_override.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		145144B91E8C46B9008ECE44 /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		145144BA1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Aspect Ratio FOV Fixer.xcodeproj"; sourceTree = "<group>"; };
 		1470F7841E8C2D3300FF694F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		1470F7881E8C300000FF694F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		14ECBE2C1E8C337C003B4BAC /* bitmaps.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bitmaps.map; sourceTree = "<group>"; };
@@ -903,6 +928,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145144B01E8C46B9008ECE44 /* Aspect Ratio FOV Fixer */ = {
+			isa = PBXGroup;
+			children = (
+				145144B11E8C46B9008ECE44 /* Aspect Ratio FOV Fixer */,
+				145144BA1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.xcodeproj */,
+			);
+			path = "Aspect Ratio FOV Fixer";
+			sourceTree = "<group>";
+		};
+		145144B11E8C46B9008ECE44 /* Aspect Ratio FOV Fixer */ = {
+			isa = PBXGroup;
+			children = (
+				145144B21E8C46B9008ECE44 /* AspectRatioFixer.h */,
+				145144B31E8C46B9008ECE44 /* AspectRatioFixer.m */,
+				145144B41E8C46B9008ECE44 /* HaloMemoryStructs.c */,
+				145144B51E8C46B9008ECE44 /* HaloMemoryStructs.h */,
+				145144B61E8C46B9008ECE44 /* Info.plist */,
+				145144B71E8C46B9008ECE44 /* mach_override.c */,
+				145144B81E8C46B9008ECE44 /* mach_override.h */,
+				145144B91E8C46B9008ECE44 /* MDPlugin.h */,
+			);
+			path = "Aspect Ratio FOV Fixer";
+			sourceTree = "<group>";
+		};
+		145144BB1E8C46B9008ECE44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				145144BF1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14ECBE2B1E8C337C003B4BAC /* Sapphire */ = {
 			isa = PBXGroup;
 			children = (
@@ -1775,6 +1832,7 @@
 			children = (
 				77B10989185D8E210080BDDF /* MDPlugin.h */,
 				77BC6752184040A600F82849 /* plugin_handler.m */,
+				145144B01E8C46B9008ECE44 /* Aspect Ratio FOV Fixer */,
 				77E6C7031842B73100705ED5 /* mach_override */,
 				14ECBF1B1E8C33F5003B4BAC /* HaloUpdate */,
 				77FD5241187F5BF800E2A604 /* MapDownloader */,
@@ -1905,6 +1963,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				145144C11E8C46EF008ECE44 /* PBXTargetDependency */,
 				14ECBF351E8C3457003B4BAC /* PBXTargetDependency */,
 				14ECBF331E8C3455003B4BAC /* PBXTargetDependency */,
 				14ECBF311E8C3452003B4BAC /* PBXTargetDependency */,
@@ -2007,6 +2066,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 145144BB1E8C46B9008ECE44 /* Products */;
+					ProjectRef = 145144BA1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.xcodeproj */;
+				},
+				{
 					ProductGroup = 14ECBF141E8C33CB003B4BAC /* Products */;
 					ProjectRef = 14ECBF131E8C33CB003B4BAC /* CustomEditionLobby.xcodeproj */;
 				},
@@ -2031,6 +2094,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		145144BF1E8C46B9008ECE44 /* Aspect Ratio FOV Fixer.mdplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Aspect Ratio FOV Fixer.mdplugin";
+			remoteRef = 145144BE1E8C46B9008ECE44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		14ECBF0B1E8C337C003B4BAC /* Sapphire.mdplugin */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -2303,6 +2373,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		145144C11E8C46EF008ECE44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Aspect Ratio FOV Fixer";
+			targetProxy = 145144C01E8C46EF008ECE44 /* PBXContainerItemProxy */;
+		};
 		14ECBF311E8C3452003B4BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Halo+";

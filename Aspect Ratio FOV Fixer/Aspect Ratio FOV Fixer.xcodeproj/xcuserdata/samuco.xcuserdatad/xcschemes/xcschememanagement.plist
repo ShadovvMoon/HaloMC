@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HaloBSP.xcscheme</key>
+		<key>Aspect Ratio FOV Fixer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>9</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>77E6C6DA18415A4A00705ED5</key>
+		<key>DA9F6D911A4FB9A100460CB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

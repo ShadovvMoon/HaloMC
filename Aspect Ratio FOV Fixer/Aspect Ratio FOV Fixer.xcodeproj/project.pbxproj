@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA6BFD041A4FC8F400C818AB /* HaloMemoryStructs.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6BFD031A4FC8F400C818AB /* HaloMemoryStructs.c */; };
+		DA9F6DA21A4FBA1100460CB6 /* AspectRatioFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9F6DA11A4FBA1100460CB6 /* AspectRatioFixer.m */; };
+		DA9F6DA61A4FC03200460CB6 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = DA9F6DA41A4FC03200460CB6 /* mach_override.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA6BFD021A4FC8F100C818AB /* HaloMemoryStructs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaloMemoryStructs.h; sourceTree = "<group>"; };
+		DA6BFD031A4FC8F400C818AB /* HaloMemoryStructs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HaloMemoryStructs.c; sourceTree = "<group>"; };
+		DA9F6D921A4FB9A100460CB6 /* Aspect Ratio FOV Fixer.mdplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aspect Ratio FOV Fixer.mdplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9F6D961A4FB9A100460CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9F6DA01A4FB9FB00460CB6 /* AspectRatioFixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectRatioFixer.h; sourceTree = "<group>"; };
+		DA9F6DA11A4FBA1100460CB6 /* AspectRatioFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectRatioFixer.m; sourceTree = "<group>"; };
+		DA9F6DA31A4FBA5500460CB6 /* MDPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPlugin.h; sourceTree = "<group>"; };
+		DA9F6DA41A4FC03200460CB6 /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		DA9F6DA51A4FC03200460CB6 /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9F6D8F1A4FB9A100460CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9F6D891A4FB9A100460CB6 = {
+			isa = PBXGroup;
+			children = (
+				DA9F6D941A4FB9A100460CB6 /* Aspect Ratio FOV Fixer */,
+				DA9F6D931A4FB9A100460CB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9F6D931A4FB9A100460CB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F6D921A4FB9A100460CB6 /* Aspect Ratio FOV Fixer.mdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9F6D941A4FB9A100460CB6 /* Aspect Ratio FOV Fixer */ = {
+			isa = PBXGroup;
+			children = (
+				DA6BFD031A4FC8F400C818AB /* HaloMemoryStructs.c */,
+				DA6BFD021A4FC8F100C818AB /* HaloMemoryStructs.h */,
+				DA9F6DA41A4FC03200460CB6 /* mach_override.c */,
+				DA9F6DA51A4FC03200460CB6 /* mach_override.h */,
+				DA9F6DA31A4FBA5500460CB6 /* MDPlugin.h */,
+				DA9F6DA11A4FBA1100460CB6 /* AspectRatioFixer.m */,
+				DA9F6D951A4FB9A100460CB6 /* Supporting Files */,
+				DA9F6DA01A4FB9FB00460CB6 /* AspectRatioFixer.h */,
+			);
+			path = "Aspect Ratio FOV Fixer";
+			sourceTree = "<group>";
+		};
+		DA9F6D951A4FB9A100460CB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F6D961A4FB9A100460CB6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9F6D911A4FB9A100460CB6 /* Aspect Ratio FOV Fixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9F6D991A4FB9A100460CB6 /* Build configuration list for PBXNativeTarget "Aspect Ratio FOV Fixer" */;
+			buildPhases = (
+				DA9F6D8E1A4FB9A100460CB6 /* Sources */,
+				DA9F6D8F1A4FB9A100460CB6 /* Frameworks */,
+				DA9F6D901A4FB9A100460CB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aspect Ratio FOV Fixer";
+			productName = "Aspect Ratio FOV Fixer";
+			productReference = DA9F6D921A4FB9A100460CB6 /* Aspect Ratio FOV Fixer.mdplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9F6D8A1A4FB9A100460CB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Zero2;
+				TargetAttributes = {
+					DA9F6D911A4FB9A100460CB6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DA9F6D8D1A4FB9A100460CB6 /* Build configuration list for PBXProject "Aspect Ratio FOV Fixer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA9F6D891A4FB9A100460CB6;
+			productRefGroup = DA9F6D931A4FB9A100460CB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9F6D911A4FB9A100460CB6 /* Aspect Ratio FOV Fixer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9F6D901A4FB9A100460CB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9F6D8E1A4FB9A100460CB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6BFD041A4FC8F400C818AB /* HaloMemoryStructs.c in Sources */,
+				DA9F6DA61A4FC03200460CB6 /* mach_override.c in Sources */,
+				DA9F6DA21A4FBA1100460CB6 /* AspectRatioFixer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA9F6D971A4FB9A100460CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA9F6D981A4FB9A100460CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA9F6D9A1A4FB9A100460CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "~/Library/Application Support/HaloMD/Plugins";
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = "Aspect Ratio FOV Fixer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Debug;
+		};
+		DA9F6D9B1A4FB9A100460CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "~/Library/Application Support/HaloMD/Plugins";
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = "Aspect Ratio FOV Fixer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
+				WRAPPER_EXTENSION = mdplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9F6D8D1A4FB9A100460CB6 /* Build configuration list for PBXProject "Aspect Ratio FOV Fixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9F6D971A4FB9A100460CB6 /* Debug */,
+				DA9F6D981A4FB9A100460CB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9F6D991A4FB9A100460CB6 /* Build configuration list for PBXNativeTarget "Aspect Ratio FOV Fixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9F6D9A1A4FB9A100460CB6 /* Debug */,
+				DA9F6D9B1A4FB9A100460CB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9F6D8A1A4FB9A100460CB6 /* Project object */;
+}
